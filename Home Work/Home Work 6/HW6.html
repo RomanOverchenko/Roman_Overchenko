@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form HW5</title>
+</head>
+
+<body>
+    <form action="action">
+        <p><b>Enter your name</b></p>
+        <p><input type="text" class="first_name" id="name" name="name" maxlength="15" required placeholder="Name"></p>
+        <p><b>Enter your phone</b></p>
+        <p><input type="tel" class="tel" id="tel" name="tel" minlength="13" required placeholder="Phone"></p>
+        <p><b>Enter your Email</b></p>
+        <p><input type="email" class="email" id="email" name="email" minlength="15" required placeholder="Email"></p>
+        <p><b>Enter your message</b></p>
+        <p><textarea class="textarea_enter" name="message" id="message" cols="30" rows="10" maxlength="100"
+                placeholder="Enter your message"></textarea></p>
+        <p><b>Заказать разработку:</b></p>
+        <select class="select_option" name="select" id="select">
+            <option value="option1">Одностраничный</option>
+            <option value="option2">Многостраничный</option>
+            <option value="option3">Интернет магазин</option>
+            <option value="option4">на Тильда</option>
+        </select>
+        <p><button type="button" class="button">Отправить</button></p>
+    </form>
+</body>
+
+</html>
