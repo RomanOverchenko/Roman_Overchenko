@@ -3,10 +3,10 @@
 	margin: 0;
 	border: 0;
 	}
-.redColor h2 {
+.redColor.boxing h2 {
     color: red;
 }
-.greenColor p {
+.greenColor.boxing p {
     font-size: 16px;
     color: green;
 }
@@ -20,5 +20,3 @@ img {
     width: 200px;
     height: 200px;
 }
-.redColor .boxing h2 {
-    color: red;
