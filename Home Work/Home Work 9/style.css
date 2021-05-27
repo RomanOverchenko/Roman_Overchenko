@@ -1,0 +1,39 @@
+.nav ul.menu {
+        background: #c032a8;
+
+    }
+
+    .nav ul.menu li.item a:hover {
+        color: blanchedalmond
+    }
+
+    .nav ul.menu li.item ul.sub-menu {
+        background: #651cc5;
+
+    }
+
+    .nav ul.menu li.item ul.sub-menu li.item a:hover {
+        color: chartreuse;
+    }
+
+    .nav ul.menu li.item ul.sub-menu li.item ul.sub-menu {
+        background: #1cbac5;
+
+    }
+
+    .nav ul.menu li.item ul.sub-menu li.item ul.sub-menu li.item a:hover {
+        color: tomato
+    }
+
+    .nav ul.menu li.item ul.sub-menu li.item ul.sub-menu a {
+        color: yellow;
+    }
+
+    .nav ul.menu li.item a {
+        font-size: 16px;
+        font-weight: bold;
+        padding: 10px;
+        display: block;
+        text-decoration: none;
+        color: black;
+    }
