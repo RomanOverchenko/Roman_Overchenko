@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+h1 {
+    text-align: center;
+    margin:25px 0;
+}
+p {
+    text-align: justify;
+}
+.container {
+    margin: 0 auto;
+    width: 1170px;
+}
+.block1-img img {
+    float: left;
+    width: 300px;
+    margin-bottom: 25px;
+    margin-right: 135px;
+}
+.block1-img img:nth-child(3){
+    margin-right: 0;
+}
+
+.block2-img img{
+    float: left;
+    margin: 10px;
+    width: 200px;
+}
+.clear {
+    clear: both;
+}
