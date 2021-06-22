@@ -54,6 +54,10 @@ img {
 .content .item-blog:nth-child(10) {
     clear: both;
 }
+.item-blog h2 {
+    margin: 13px 0;
+    min-height: 65px;
+}
 
 .item-blog h2 a {
     font-size: 16px;
@@ -91,19 +95,25 @@ img {
     overflow: hidden;
 }
 .image-blog img {
-    transition:all 1s ease-out;
+    transition: all 1s linear;
 }
 .image-blog img:hover{
     transform: scale(1.1);
 }
-.content .item-blog:nth-child(2) .image-blog,
-.content .item-blog:nth-child(5) .image-blog{
-    transition:all 1s ease-out;
+.content .item-blog:nth-child(2) .image-blog img,
+.content .item-blog:nth-child(5) .image-blog img{
+  transition: all 2s linear;
 }
-.content .item-blog:nth-child(2) .image-blog:hover,
-.content .item-blog:nth-child(5) .image-blog:hover{
+.content .item-blog:nth-child(2) .image-blog img:hover,
+.content .item-blog:nth-child(5) .image-blog img:hover{
     border-radius: 100%;
-    transition:all 1s ease-out;
+    width: 205px;
+    height: 205px;
+    margin: 0 auto;
+    display: block; 
+    object-fit: cover;
+    transform: none;
+    transition: 2s linear;
 }
     
 .text_before {

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW16</title>
+</head>
+<style>
+    .spriteMarsch {
+        background-image: url(img/sprite-marsch.png);
+        width: calc(672px/6);
+        height: 156px;
+        margin: 0 auto;
+
+        -webkit-animation: man 1s steps(6) infinite;
+        -moz-animation: man 1s steps(6) infinite;
+        -o-animation: man 1s steps(6) infinite;
+        animation: man 1s steps(6) infinite;
+
+    }
+
+    @keyframes man {
+        from {
+            background-position: 0 0;
+        }
+
+        to {
+            background-position: -672px 0;
+        }
+    }
+
+    @-webkit-keyframes man {
+        from {
+            background-position: 0 0;
+        }
+
+        to {
+            background-position: -672px 0;
+        }
+    }
+
+    @-moz-keyframes man {
+        from {
+            background-position: 0 0;
+        }
+
+        to {
+            background-position: -672px 0;
+        }
+    }
+
+    @-o-keyframes man {
+        from {
+            background-position: 0 0;
+        }
+
+        to {
+            background-position: -672px 0;
+        }
+    }
+
+    @keyframes man {
+        from {
+            background-position: 0 0;
+        }
+
+        to {
+            background-position: -672px 0;
+        }
+    }
+</style>
+
+<body>
+    <div class="spriteMarsch"></div>
+
+</body>
+
+</html>
