@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW23</title>
+</head>
+<style>
+    button::after {
+        content: 'Отправить';
+        text-indent: 0;
+        display: block;
+        line-height: initial;
+    }
+
+    button {
+        text-indent: -9999px;
+        line-height: 0;
+    }
+</style>
+
+<body>
+    <button>Send</button>
+</body>
+<script>
+    // Задание № 1
+    let a = Math.max(10, 15, 25, 35, 45);
+    console.log(a);
+
+    let summ = prompt('Введите максимальное число', '');
+    if (summ == 45) {
+        alert('Правильно');
+    } else if (summ > 45) {
+        alert('Число больше чем нужно');
+    } else if (summ < 45) {
+        alert('Число меньше чем нужно');
+    }
+
+    // Задание № 2 через Swith
+    let num = prompt('Угадайте цвет', '');
+    switch (num) {
+        case 'Синий':
+            alert('Синий, все верно!');
+            break;
+        case 'Красний':
+            alert('Красний, все верно!');
+            break;
+        case 'Желтый':
+            alert('Желтый, все верно!');
+            break;
+        case 'Черный':
+            alert('Черный, все верно!');
+            break;
+        case 'Белый':
+            alert('Белый, все верно!');
+            break;
+        default:
+            alert("Нет такого цвета");
+    }
+    // Задание № 2 через if else
+    let num1 = prompt('Угадайте цвет', '');
+    if (num1 === 'Синий') {
+        alert('Синий, все верно!');
+    } else if (num1 === 'Красний') {
+        alert('Красний, все верно!');
+    } else if (num1 === 'Желтый') {
+        alert('Желтый, все верно!');
+    } else if (num1 === 'Черный') {
+        alert('Черный, все верно!');
+    } else if (num1 === 'Белый') {
+        alert('Белый, все верно!');
+    } else {
+        alert("Нет такого цвета");
+    }
+</script>
+
+</html>
