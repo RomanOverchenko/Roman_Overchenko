@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW25</title>
+</head>
+
+<body>
+    <div>
+        <button onclick="func5()">Array 5</button>
+        <button onclick="func7()">Array 7</button>
+    </div>
+    <script>
+
+        function func5() {
+            let arr5 = ['one', 'two', 'three', 'four', 'five',];
+
+            for (let i in arr5) {
+                document.write(i + '</br >');
+            }
+            console.log(arr5.length);
+        }
+
+        function func7() {
+            let arr7 = ['red', 'green', 'yellow', 'black', 'blue', 'pink', 'brown'];
+
+            for (let i of arr7) {
+
+                document.write(i + '</br >');
+
+            }
+            console.log(arr7.length);
+        }
+
+    </script>
+
+</body>
+
+</html>
