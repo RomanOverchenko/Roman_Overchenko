@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #p2 {
+        display: none;
+    }
+</style>
+
+<body>
+    <div class="page">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, necessitatibus esse? Temporibus aliquid
+            odit ea ad nulla repellat sequi ab tempora. Possimus expedita maxime iure dignissimos quidem omnis
+            praesentium maiores ipsa magnam error architecto obcaecati vero fuga nobis incidunt dolorum adipisci,
+            dolores ipsam nemo recusandae voluptatibus blanditiis fugiat! Placeat assumenda voluptatem dolores pariatur
+            itaque ipsa dolorem esse porro tempore ut, expedita molestiae rerum aliquam sit dolore reiciendis
+            repudiandae sequi laboriosam in vel? Illum voluptatum, maiores harum consequatur ratione dolorum est atque
+            optio voluptatem deserunt. Error, in. Aliquam dolores aut consequatur quo ex, quos facilis repudiandae qui
+            nobis tenetur, perspiciatis tempore.</p>
+        <p id="p2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti,
+            necessitatibus esse? Temporibus
+            aliquid
+            odit ea ad nulla repellat sequi ab tempora. Possimus expedita maxime iure dignissimos quidem omnis
+            praesentium maiores ipsa magnam error architecto obcaecati vero fuga nobis incidunt dolorum adipisci,
+            dolores ipsam nemo recusandae voluptatibus blanditiis fugiat! Placeat assumenda voluptatem dolores pariatur
+            itaque ipsa dolorem esse porro tempore ut, expedita molestiae rerum aliquam sit dolore reiciendis
+            repudiandae sequi laboriosam in vel? Illum voluptatum, maiores harum consequatur ratione dolorum est atque
+            optio voluptatem deserunt. Error, in. Aliquam dolores aut consequatur quo ex, quos facilis repudiandae qui
+            nobis tenetur, perspiciatis tempore.</p>
+        <input id="btn" type="button" value="Больше">
+    </div>
+</body>
+<script>
+    btn.onclick = function openBox() {
+        let display = document.getElementById('p2').style.display;
+        if (display == 'none') {
+            document.getElementById('p2').style.display = "block";
+            document.getElementById('btn').value = 'Меньше'
+        } else {
+            document.getElementById('p2').style.display = "none";
+            document.getElementById('btn').value = 'Больше'
+        }
+    }
+</script>
+
+</html>

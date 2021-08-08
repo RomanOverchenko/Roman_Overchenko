@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW27</title>
+</head>
+
+<body>
+    <div class="object"></div>
+</body>
+<script>
+    //Задание 2
+
+    let array = new Map([
+        ['key', 'value'],
+        ['key1', 'value1'],
+        ['key2', 'value2']
+    ]);
+    array.set('key3', 'value3');
+    array.set('key4', 'value4');
+
+    console.log(array.size);
+    array.delete('key2');
+    array.delete('key4');
+
+    console.log(array);
+    array.clear();
+    console.log(array);
+
+    //Задание 3
+
+    let maxNumber = function max() {
+        return Math.max(5, 80, -44, 120, 60, -5, 206);
+    }
+    console.log(maxNumber());
+
+    //Задание 4 
+    let obj = {
+        firstName: "Maya",
+        lastName: "Dos",
+        language: " ",
+        nameCat: " ",
+        nameDog: " Profi",
+        set cat(cat) {
+            this.nameCat = cat;
+        },
+        set lang(lang) {
+            this.language = lang;
+        }
+
+    };
+    obj.cat = 'Puma'
+    obj.lang = 'UA'
+
+
+    delete obj.nameDog;
+    let object = document.querySelector('.object');
+
+
+    object.innerHTML = obj.firstName + '</br>' + obj.lastName + '</br>' + obj.language + '</br>' + obj.nameCat
+
+
+
+
+</script>
+
+</html>
