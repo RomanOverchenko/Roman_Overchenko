@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CW30</title>
+</head>
+
+<body>
+    <p>Введите число</p>
+    <input id="input" type="text">
+    <button onclick="myFunction()">Проверка числа</button>
+    <div id="result"></div>
+</body>
+<script>
+    let a = +prompt('Введите год');
+    let today = new Date();
+
+    if (a < today.getFullYear()) {
+        alert('Год уже прошел');
+    } else if (a > today.getFullYear()) {
+        alert('Год еще не наступил');
+    } else {
+        alert('Текущий год');
+    }
+    console.log(today);
+
+    // Задание № 2
+
+    function myFunction() {
+        let message, x;
+        message = document.getElementById('result');
+        message.innerHTML = ' ';
+        x = document.getElementById('input').value.length;
+        try {
+            if (isNaN(x)) throw 'Вы ввели не число';
+            x = Number(x);
+            if (x == ' ') throw 'Вы ничего не ввели';
+            if (x > 10) throw 'Вы ввели слишком много символов должно быть только 10 символов';
+            if (x < 10) throw 'Вы ввели слишком мало символов должно быть только 10 символов';
+
+        } catch (err) {
+            message.innerHTML = ' ' + err;
+        } finally {
+            document.getElementById('result').value = '';
+        }
+
+    }
+
+
+
+
+
+
+</script>
+
+</html>
