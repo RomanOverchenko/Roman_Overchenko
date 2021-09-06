@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>calculator</title>
+</head>
+<style>
+	.main-calculator {
+		width: 500px;
+		margin: 0 auto;
+		text-align: center;
+		background: #2E8C9A;
+		padding: 20px;
+		border: solid 2px #000;
+		margin-top: 100px;
+	}
+
+	.operation-block button {
+		width: 40px;
+		height: 40px;
+		margin: 20px;
+		border: none;
+		outline: none;
+		transition: 0.3s;
+		background: #054440;
+		color: #fff;
+		font-size: 20px;
+		text-align: center;
+		cursor: pointer;
+	}
+
+	.operation-block button:hover {
+		background: #03095D;
+	}
+
+	.input-block {
+		display: inline-block;
+		padding: 10px;
+	}
+
+	.input-block input {
+		outline: none;
+		padding: 10px;
+	}
+
+	.input-block label {
+		display: block;
+	}
+</style>
+
+<body>
+	<div class="main-calculator">
+		<div class="operation-block">
+			<button id="buttonPlus">+</button>
+			<button id="buttonMinus">-</button>
+			<button id="buttonMultiply">*</button>
+			<button id="buttonDevide">/</button>
+			<button id="buttonPercent">%</button>
+		</div>
+		<hr />
+		<div class="form-inputs">
+			<form>
+				<div class="input-block">
+					<label>Number 1</label>
+					<input type="number" id="number1" value="15" />
+				</div>
+
+				<div class="input-block">
+					<label>Number 2</label>
+					<input type="number" id="number2" value="10" />
+				</div>
+			</form>
+			<div class="result input-block">
+				<label>Result</label>
+				<input type="number" id="resault" />
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+	let buttonPlus = document.getElementById("buttonPlus");
+	let buttonMinus = document.getElementById("buttonMinus");
+	let buttonMultiply = document.getElementById("buttonMultiply");
+	let buttonDevide = document.getElementById("buttonDevide");
+
+	let input1 = document.getElementById("number1");
+	let input2 = document.getElementById("number2");
+
+	function getNumber1() {
+		return Number(input1.value);
+	}
+
+	function getNumber2() {
+		return Number(input2.value);
+	}
+
+	function OperetionCalc(childOperation) {
+		let resault;
+		switch (childOperation) {
+			case "+":
+				resault = getNumber1() + getNumber2();
+				break;
+			case "-":
+				resault = getNumber1() - getNumber2();
+				break;
+			case "*":
+				resault = getNumber1() * getNumber2();
+				break;
+			case "/":
+				resault = getNumber1() / getNumber2();
+				break;
+			case "%":
+				resault = (getNumber1() / 100) * getNumber2();
+				break;
+			default:
+				alert = "Введите значение";
+		}
+
+
+		// if (childOperation === "+") {
+		// 	resault = getNumber1() + getNumber2();
+		// } else if (childOperation === "-") {
+		// 	resault = getNumber1() - getNumber2();
+		// } else if (childOperation === "*") {
+		// 	resault = getNumber1() * getNumber2();
+		// } else if (childOperation === "/") {
+		// 	resault = getNumber1() / getNumber2();
+		// } else {
+		// 	alert("Что таких данных нет");
+		// }
+		document.getElementById("resault").value = resault
+	}
+
+	function buttonPlusClick() {
+		OperetionCalc('+');
+
+	}
+
+	function buttonMinusClick() {
+		OperetionCalc('-');
+	}
+
+	function buttonMultiplyClick() {
+		OperetionCalc('*');
+	}
+
+	function buttonDevideClick() {
+		OperetionCalc('/');
+	}
+	function buttonPercentClick() {
+		OperetionCalc('%');
+	}
+
+	buttonPlus.addEventListener("click", buttonPlusClick);
+	buttonMinus.addEventListener("click", buttonMinusClick);
+	buttonMultiply.addEventListener("click", buttonMultiplyClick);
+	buttonDevide.addEventListener("click", buttonDevideClick);
+	buttonPercent.addEventListener("click", buttonPercentClick);
+</script>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CW32</title>
+</head>
+
+<body>
+    <div>
+        <input type="text" id="name">
+        <div id="results"></div>
+    </div>
+    <div>
+        <input type="text" id="lastName">
+        <div id="results1"></div>
+        <button id="send">Send</button>
+    </div>
+</body>
+<script>
+    let btn = document.getElementById("send");
+    btn.addEventListener("click", function () {
+        let name = document.getElementById("name").value;
+        document.getElementById('results').innerHTML = name;
+        let lastName = document.getElementById("lastName").value;
+        document.getElementById('results1').innerHTML = lastName;
+
+    });
+</script>
+
+</html>

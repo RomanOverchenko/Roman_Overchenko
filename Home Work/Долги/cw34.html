@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CW34</title>
+</head>
+<style>
+    body {
+        background: #BA59B1;
+    }
+
+    .wrapper {
+        padding-top: 150px;
+    }
+
+    .container {
+        max-width: 970px;
+        margin: 0 auto;
+    }
+
+    .btn {
+        outline: none;
+        border: none;
+        font-size: 15px;
+        background: #333;
+        color: #fff;
+        text-align: center;
+        display: inline-block;
+        padding: 10px 25px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background: #2c50df;
+    }
+</style>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <button data-click="Click1" class="btn">Click 1</button>
+            <button data-click="Click2" class="btn">Click 2</button>
+            <button data-click="Click3" class="btn">Click 3</button>
+            <div id="result"></div>
+        </div>
+
+    </div>
+
+</body>
+<script>
+    let res = document.querySelector("#result");
+    let btnClick = (event) => {
+        res.textContent = event.target.dataset.click;
+    }
+    let buttons = document.querySelectorAll(".btn");
+    buttons.forEach(btn => {
+        btn.addEventListener('click', btnClick)
+    });
+</script>
+
+</html>

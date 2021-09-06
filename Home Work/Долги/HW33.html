@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW33</title>
+</head>
+<style>
+    .container {
+        max-width: 900px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    img {
+        width: 200px;
+        height: auto;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h2>CSS</h2>
+        <img src="img/img1.jpg" alt="img" title="img" />
+
+        <h2>Java Script</h2>
+        <img src="img/img1.jpg" alt="img1" title="img1" id="pic" />
+    </div>
+</body>
+<script>
+    pic.onmouseover = function () {
+        this.src = "img/img2.jpg";
+        this.alt = this.title = "img2";
+    }
+    pic.onmouseout = function () {
+        this.src = "img/img1.jpg";
+        this.alt = this.title = "img1";
+    }
+</script>
+
+</html>
